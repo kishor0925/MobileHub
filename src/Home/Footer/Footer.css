@@ -1,0 +1,34 @@
+.footer{
+    padding:60px 0;
+}
+
+.footer-logo{
+    width:150px;
+}
+
+.footer-title{
+    margin-bottom:15px;
+}
+
+.footer-list{
+    list-style:none;
+    padding:0;
+}
+
+.footer-list li{
+    margin-bottom:8px;
+}
+
+.footer-list a{
+    text-decoration:none;
+    color:#ccc;
+}
+
+.footer-list a:hover{
+    color:white;
+}
+
+.footer-text{
+    color:#ccc;
+    font-size:14px;
+}

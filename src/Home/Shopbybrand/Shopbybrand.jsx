@@ -11,7 +11,7 @@ import p1 from './Images/poster1.webp'
 import p2 from './Images/poster2.webp'
 import p3 from './Images/poster3.jpg'
 import p4 from './Images/poster4.jpg'
-
+import p5 from './Images/poster3.webp'
 
 const BrandSlider = () => {
 
@@ -87,7 +87,12 @@ const BrandSlider = () => {
             <img src={p4} alt="poster2" className="img-fluid poster-img" />
           </div>
 
+
+          
         </div>
+
+
+        
       </div>
 
 

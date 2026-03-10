@@ -1,0 +1,21 @@
+.swiper-inner{
+    padding:10px;
+}
+
+.review-card{
+    background:#f8f8f8;
+    padding:25px;
+    border-radius:10px;
+    height:220px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    transition:0.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}

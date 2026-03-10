@@ -3,6 +3,9 @@ import Navbar from './Home/Navbar/Navbar'
 import Courosel from './Home/Courosel/Courosel'
 import Shopbybrand from './Home/Shopbybrand/Shopbybrand'
 import Timer from './Home/TimeBomb/Timer'
+import Subscribe from './Home/Subscribe/Subscribe'
+import Testimonials from './Home/Testimonials/Testimonials'
+import Footer from './Home/Footer/Footer'
 const App = () => {
   return (
     <>
@@ -10,6 +13,9 @@ const App = () => {
      <Courosel/>
      <Shopbybrand/>
      <Timer/>
+     <Subscribe/>
+     <Testimonials/>
+     <Footer/>
     </>
   )
 }

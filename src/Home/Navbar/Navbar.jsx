@@ -26,9 +26,9 @@ return (
           <a className="nav-link" href="#">Home</a>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a className="nav-link" href="#">About Us</a>
-        </li>
+        </li> */}
 
         <li className="nav-item">
           <a className="nav-link" href="#">Brands</a>

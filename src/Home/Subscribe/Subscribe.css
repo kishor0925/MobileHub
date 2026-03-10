@@ -1,0 +1,73 @@
+.subscribe{
+    background-image: url("./Images/bg.jpg");
+    width: 90%;
+    height: 50vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    position: relative;
+}
+
+/* dark overlay for better text readability */
+.subscribe::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    border-radius: 12px;
+}
+
+/* content above overlay */
+.subscribe h1,
+.subscribe input,
+.subscribe button{
+    position: relative;
+}
+
+.subscribe h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* input field */
+.subscribe input{
+    width: 320px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* button */
+.button{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+
+    background: #ff3c3c;
+    color: white;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: #000;
+    transform: scale(1.05);
+}
