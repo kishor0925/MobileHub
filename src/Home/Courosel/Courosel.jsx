@@ -49,7 +49,7 @@ const Courosel = () => {
             >
                 <span className='btn btn-danger rounded-pill'>Next</span>
             </button>
-
+            
         </div>
     )
 }

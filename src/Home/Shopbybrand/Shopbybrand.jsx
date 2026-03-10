@@ -1,4 +1,4 @@
-import React from "react";
+
 import './Shopbybrand.css'
 import infinix from "./Images/infinix.png";
 import iphone from "./Images/iphone.png";
@@ -25,8 +25,10 @@ const BrandSlider = () => {
     { img: vivo, brand: "Vivo" }
   ]
 
+   
+
   return (
-    <div className="container">
+    <div>
       <div className="brand-slider container mt-2">
         <h1 className="text-center mt-2">Authorized Brand </h1>
         <div className="brand-track mt-5">
@@ -89,6 +91,7 @@ const BrandSlider = () => {
       </div>
 
 
+    
     </div>
 
   );

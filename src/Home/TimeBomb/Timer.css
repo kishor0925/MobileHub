@@ -1,0 +1,43 @@
+.timerbg{
+    margin-top:20px;
+    background-image:url("./Images/timerbg.webp");
+    width:90%;
+    height:30vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+}
+
+.timer-inner{
+    text-align:center;
+    color:white;
+    padding: 80px;
+    padding: 100px;
+}
+
+.button{
+    margin-top:15px;
+    border:none;
+    border-radius:30px;
+    width:200px;
+    height:50px;
+    background : transparent;
+    border: 2px solid white;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#ff3c3c;
+    transform:scale(1.05);
+}
