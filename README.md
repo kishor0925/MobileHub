@@ -1,21 +1,67 @@
-<<<<<<< HEAD
-# React + Vite
+# 📱 MobileHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MobileHub is a **Mobile E-Commerce Website** built using **React.js** and **Vite**.
+It is designed as a platform where users can browse and purchase smartphones from multiple brands.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Shop smartphones by **brand**
+* Responsive **modern UI**
+* Product showcase with **image sliders**
+* **Add to Cart** functionality
+* Smooth navigation using **React components**
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* Redux
+* Bootstrap
+* Vite
+* CSS
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# MobileHub
-This is E commerce website based on smart phone purchasing platform build with react.js and redux and cart page functionality
->>>>>>> f3694cccb17989d4699e68a76ab5f78e7bb750d9
+```
+src
+ ├── Home
+ │   ├── Navbar
+ │   ├── Carousel
+ │   ├── Shopbybrand
+ │
+ ├── App.jsx
+ ├── main.jsx
+```
+
+## ⚡ Installation
+
+Clone the repository
+
+```
+git clone https://github.com/kishor0925/MobileHub.git
+```
+
+Go to project folder
+
+```
+cd MobileHub
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the project
+
+```
+npm run dev
+```
+
+## 📌 Status
+
+🚧 Project currently in **development stage**
+
+---
+
+👨‍💻 Developed by **Kishor**
