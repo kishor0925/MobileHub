@@ -1,22 +1,19 @@
 import React from 'react'
-import Navbar from './Home/Navbar/Navbar'
-import Courosel from './Home/Courosel/Courosel'
-import Shopbybrand from './Home/Shopbybrand/Shopbybrand'
-import Timer from './Home/TimeBomb/Timer'
-import Subscribe from './Home/Subscribe/Subscribe'
-import Testimonials from './Home/Testimonials/Testimonials'
-import Footer from './Home/Footer/Footer'
+import Home from './Home'
+import {BrowserRouter,Route, Routes} from 'react-router-dom'
+import Brand from './Components/Brands/Brand'
+
+
 const App = () => {
   return (
-    <>
-     <Navbar/>
-     <Courosel/>
-     <Shopbybrand/>
-     <Timer/>
-     <Subscribe/>
-     <Testimonials/>
-     <Footer/>
-    </>
+    <BrowserRouter>
+  
+    <Routes>
+      <Route  path='/' element = {<Home/>} />
+      <Route path='/brand' element = {<Brand/>} />
+     </Routes>
+   
+    </BrowserRouter>
   )
 }
 
