@@ -1,7 +1,12 @@
-.nav-item .nav-link, .navbar-brand{
-    text-transform: uppercase;   
+.nav-link,
+.navbar-brand{
+    text-transform: uppercase;
 }
 
-.nav-item .nav-link:hover{
+.nav-link:hover{
+    color: aqua;
+}
+
+.nav-link.active{
     color: aqua;
 }
