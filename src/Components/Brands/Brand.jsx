@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import products from "./BrandInfo";
 import "./Brand.css";
-
+import { Link } from "react-router-dom";
 const Brand = () => {
 
   const initialState = {
@@ -115,12 +115,12 @@ const Brand = () => {
 
                 <div className="card-buttons">
 
+                <Link to = {`/product/${pro.id}`}>
                   <button className="buy-btn">
                     Buy Now
                   </button>
-
-               
-
+                </Link>
+                  
                 </div>
 
               </div>
