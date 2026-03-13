@@ -10,6 +10,8 @@ const Brand = () => {
         if(action.type === "SetBrand"){
             return {...state , brand : action.payload}
         }
+
+        return state
     }
 
     const [state, dispatch] = useReducer(reducerFn, initialState);
@@ -22,22 +24,22 @@ const Brand = () => {
   return (
     <div>
         <button 
-         onClick={() => dispatch({type : "Setbrand" , payload : "all"})}
+         onClick={() => dispatch({type : "SetBrand" , payload : "all"})}
         >
             All
         </button>
         <button 
-         onClick={() => dispatch({type : "Setbrand" , payload : "redmi"})}
+         onClick={() => dispatch({type : "SetBrand" , payload : "redmi"})}
         >
             Redmi
         </button >
         <button
-        onClick={() => {dispatch({type : "Setbrand" , payload : "realme"})}}
+        onClick={() => {dispatch({type : "SetBrand" , payload : "realme"})}}
         >
             Realme
         </button>
         <button 
-        onClick={() => {dispatch({type : "Setbrand" , payload : "apple"})}}
+        onClick={() => {dispatch({type : "SetBrand" , payload : "apple"})}}
         >
             Apple
         </button>
@@ -48,10 +50,10 @@ const Brand = () => {
         </button>
 
 
-        <div className='container'>
+        <div className='container row'>
             {
                 filterproducts.map( fltrproduct => (
-                    <div className="card p-3 h-100">
+                    <div key={fltrproduct.id} className="card p-3 h-100 col-12 col-md-4 col-lg-3">
 
                             <img
                                 src={fltrproduct.image}
