@@ -1,3 +1,6 @@
 #root{
 font-family: "Mozilla Headline", sans-serif;
 } 
+body {
+  padding-top: 70px;
+}

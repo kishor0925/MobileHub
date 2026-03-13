@@ -1,0 +1,115 @@
+.brand-page{
+  min-height:100vh;
+  padding-bottom:40px;
+}
+
+/* ---------------- Filter Box ---------------- */
+
+.filter-box{
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ---------------- Product Card ---------------- */
+
+.product-card{
+  background:white;
+  border-radius:10px;
+  padding:15px;
+  border:1px solid #eee;
+  height:100%;
+  transition:0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+
+/* ---------------- Image Section ---------------- */
+
+.product-img{
+  text-align:center;
+  overflow:hidden;
+}
+
+.product-img img{
+  height:220px;
+  width:100%;
+  object-fit:contain;
+  transition:0.3s;
+}
+
+/* image zoom */
+
+.product-card:hover img{
+  transform:scale(1.08);
+}
+
+/* ---------------- Product Info ---------------- */
+
+.product-title{
+  font-size:16px;
+  font-weight:600;
+  margin-top:10px;
+}
+
+.brand-name{
+  color:#777;
+  font-size:13px;
+  margin-bottom:8px;
+  text-transform:uppercase;
+}
+
+/* ---------------- Price Section ---------------- */
+
+.price-section{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:10px;
+}
+
+.price{
+  color:#e53935;
+  font-weight:700;
+  font-size:18px;
+}
+
+
+
+/* ---------------- Buttons ---------------- */
+
+.buy-btn{
+  width:100%;
+  background:#111;
+  color:white;
+  border:none;
+  border-radius:6px;
+  padding:8px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.buy-btn:hover{
+  background:#333;
+  transform:scale(1.03);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width:768px){
+
+.product-img img{
+  height:180px;
+}
+
+.product-title{
+  font-size:15px;
+}
+
+.price{
+  font-size:16px;
+}
+
+} 
