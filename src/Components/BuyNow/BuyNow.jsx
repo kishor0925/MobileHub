@@ -1,49 +1,100 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import products from '../Brands/BrandInfo'
+import './BuyNow.css'
 
 const BuyNow = () => {
 
     const { id } = useParams()
+    const [qty, setQty] = useState(1)
 
     const filterproduct = products.find(pro => pro.id === Number(id))
 
+  
+
     if (!filterproduct) {
-        return <h2>Product Not Found</h2>
+        return <h2 className='text-center mt-5'>Product Not Found</h2>
+    }
+
+    function addtocart(){
+        alert('Cart added successfully');
     }
 
     return (
-        <div className='container row d-flex justify-content-center align-items-center'>
 
-            <div className='col-12 col-md-5 col-lg-6'>
-                <img src={filterproduct.image} className='img-fluid' />
+        <div className='container product-page'>
+
+            <div className='row product-card'>
+
+                {/* Product Image */}
+                <div className='col-lg-6 text-center'>
+                    <img
+                        src={filterproduct.image}
+                        className='product-img'
+                        alt={filterproduct.name}
+                    />
+                </div>
+
+                {/* Product Info */}
+                <div className='col-lg-6 product-info'>
+
+                    <h2 className='product-title'>{filterproduct.name}</h2>
+
+                    <h4 className='product-price'>₹ {filterproduct.price}</h4>
+
+                    <p><b>Display :</b> {filterproduct.specs.display}</p>
+                    <p><b>OS :</b> {filterproduct.specs.os}</p>
+                    <p><b>Rear Camera :</b> {filterproduct.specs.rearCamera}</p>
+                    <p><b>Front Camera :</b> {filterproduct.specs.frontCamera}</p>
+                    <p><b>Battery :</b> {filterproduct.specs.battery}</p>
+
+                    {/* Quantity */}
+
+                    <div className="qty-box">
+
+                        <button
+                            onClick={() => setQty(qty > 1 ? qty - 1 : 1)}
+                            className='qty-btn'
+                        >
+                            -
+                        </button>
+
+                        <span className='qty-number'>{qty}</span>
+
+                        <button
+                            onClick={() => setQty(qty + 1)}
+                            className='qty-btn'
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                    {/* Buttons */}
+
+                    <div className='product-buttons'>
+
+                        <button
+                            className='btn cart-btn'
+                            onClick={addtocart}
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
             </div>
 
-            <div className='col-12 col-md-5 col-lg-6'>
-                <h3 className='fw-bold'>{filterproduct.name}</h3>
 
-                <p><b>Display :</b> {filterproduct.specs.display}</p>
-                <p><b>OS :</b> {filterproduct.specs.os}</p>
-                <p><b>Rear Camera :</b> {filterproduct.specs.rearCamera}</p>
-                <p><b>Front Camera :</b> {filterproduct.specs.frontCamera}</p>
-                <p><b>Battery :</b> {filterproduct.specs.battery}</p>
-                <button>
-                    +
-                </button>
-                <button>
-                    -
-                </button>
+            {/* Product Description */}
 
-                <button>
-                    Add to cart
-                </button>
-            </div>
+            <div className='product-description mt-5'>
 
+                <h3 className='mb-4'>Product Description</h3>
 
-            <div className='col-12 col-md-5 col-lg-6'>
-                <h1>Product Description</h1>
+                <table className="table table-bordered specs-table">
 
-                <table className="table table-bordered">
                     <tbody>
 
                         <tr>
@@ -77,7 +128,7 @@ const BuyNow = () => {
                         </tr>
 
                         <tr>
-                            <th>Bluetooth Technology</th>
+                            <th>Bluetooth</th>
                             <td>{filterproduct.descriptions.bluetooth}</td>
                         </tr>
 
@@ -130,9 +181,15 @@ const BuyNow = () => {
                             <th>In The Box</th>
                             <td>{filterproduct.descriptions.inTheBox}</td>
                         </tr>
+
                     </tbody>
+
                 </table>
+
             </div>
+
+
+
         </div>
     )
 }

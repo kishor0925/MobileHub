@@ -44,7 +44,6 @@ const Brand = () => {
 
       <h2 className="text-center mb-4">Choose your Brand</h2>
 
-      {/* Brand Filter */}
       <div className="filter-box mb-4">
 
         <div className="row g-3 align-items-center">
@@ -90,14 +89,12 @@ const Brand = () => {
 
             <div className="product-card">
            
-              {/* Image */}
               <div className="product-img">
                 <img src={pro.image} alt={pro.name} />
               </div>
 
                  <span className="badge bg-danger text-white">HOT</span>
 
-              {/* Product Info */}
               <div className="product-info">
 
                 <h5 className="product-title">{pro.name}</h5>
