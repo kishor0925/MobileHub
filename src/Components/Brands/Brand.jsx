@@ -2,82 +2,47 @@ import React, { useReducer } from 'react'
 import products from './BrandInfo'
 const Brand = () => {
 
+
     const initialState = {
-        brand : "all"
+        brand : 'all'
     }
 
     const reducerFn = (state, action) => {
-        if(action.type === "SetBrand"){
-            return {...state , brand : action.payload}
+        if(action.type === 'SetBrand'){
+           return {...state, brand : action.payload}
         }
-
-        return state
     }
 
-    const [state, dispatch] = useReducer(reducerFn, initialState);
+    const [state, dispatch] = useReducer(reducerFn , initialState);
 
-    const filterproducts = products.filter((product) => (
-        state.brand === "all" ? product : product.brand === state.brand
 
-    ))
-
+   const filterproducts = products.filter((prod) =>
+  state.brand === "all" ? products : prod.brand === state.brand
+);
   return (
     <div>
-        <button 
-         onClick={() => dispatch({type : "SetBrand" , payload : "all"})}
-        >
-            All
-        </button>
-        <button 
-         onClick={() => dispatch({type : "SetBrand" , payload : "redmi"})}
-        >
-            Redmi
-        </button >
-        <button
-        onClick={() => {dispatch({type : "SetBrand" , payload : "realme"})}}
-        >
-            Realme
-        </button>
-        <button 
-        onClick={() => {dispatch({type : "SetBrand" , payload : "apple"})}}
-        >
-            Apple
-        </button>
-        <button 
-        onClick={() => {dispatch({type : "SetBrand" , payload : "vivo"})}}
-        >
-            Vivo
-        </button>
+       
 
+       <select 
+       onChange={(e) => dispatch({type : 'SetBrand' , payload : e.target.value})}
+       >
 
-        <div className='container row'>
-            {
-                filterproducts.map( fltrproduct => (
-                    <div key={fltrproduct.id} className="card p-3 h-100 col-12 col-md-4 col-lg-3">
-
-                            <img
-                                src={fltrproduct.image}
-                                alt={fltrproduct.name}
-                                className="img-fluid"
-                                style={{ height: "200px", objectFit: "cover" }}
-                            />
-
-                            <h5 className="mt-3">{fltrproduct.name}</h5>
-
-                            <p>{fltrproduct.description}</p>
-
-                            <h6>₹{fltrproduct.price}</h6>
-
-                            <button className="btn btn-dark mt-2">
-                                Buy Now
-                            </button>
-
-                        </div>
-
-                ) )
-            }
-        </div>
+        <option value="all">all</option>
+        <option value="apple">apple</option>
+        <option value="redmi">redmi</option>
+        <option value="realme">realme</option>
+       </select>
       
+      <div className='container row'>
+        {
+            filterproducts.map( pro => (
+                <div className='card col-12 col-md-4 col-lg-3'>
+                    <img src={pro.image} alt="" />
+                    <h1>{pro.brand}</h1>
+                </div>
+            ))
+        }
+      </div>
     </div>
   )
 }
