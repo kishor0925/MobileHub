@@ -95,7 +95,7 @@ const Brand = () => {
                 <img src={pro.image} alt={pro.name} />
               </div>
 
-                 <span class="badge bg-danger text-white">HOT</span>
+                 <span className="badge bg-danger text-white">HOT</span>
 
               {/* Product Info */}
               <div className="product-info">
