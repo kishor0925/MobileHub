@@ -89,12 +89,13 @@ const Brand = () => {
           <div key={pro.id} className="col-12 col-md-6 col-lg-3">
 
             <div className="product-card">
-
-
+           
               {/* Image */}
               <div className="product-img">
                 <img src={pro.image} alt={pro.name} />
               </div>
+
+                 <span class="badge bg-danger text-white">HOT</span>
 
               {/* Product Info */}
               <div className="product-info">
@@ -108,8 +109,8 @@ const Brand = () => {
                 </p>
 
                 <div className="price-section">
-                  <span className="price">₹{pro.price}</span>
-                  <span className="old-price">₹{pro.price + 8000}</span>
+                  <span className="price">Price : ₹{pro.price}</span>
+                  <span className="old-price"> ₹{pro.price + 8000}</span>
                 </div>
 
                 <div className="card-buttons">
