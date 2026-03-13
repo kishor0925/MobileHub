@@ -26,7 +26,16 @@ const products = [
             weight: "171g"
         },
 
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -59,7 +68,16 @@ const products = [
             os: "iOS 17",
             weight: "171g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -92,7 +110,16 @@ const products = [
             os: "iOS 17",
             weight: "171g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -125,7 +152,16 @@ const products = [
             os: "iOS 17",
             weight: "171g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -158,7 +194,16 @@ const products = [
             os: "iOS 17",
             weight: "171g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -195,7 +240,16 @@ const products = [
             os: "Android 13",
             weight: "168g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -228,7 +282,16 @@ const products = [
             os: "Android 13",
             weight: "168g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -261,7 +324,16 @@ const products = [
             os: "Android 13",
             weight: "168g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -295,7 +367,16 @@ const products = [
             os: "Android 13",
             weight: "168g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -329,7 +410,16 @@ const products = [
             os: "Android 13",
             weight: "168g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -364,7 +454,16 @@ const products = [
             os: "Android 13",
             weight: "188g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -397,7 +496,16 @@ const products = [
             os: "Android 13",
             weight: "188g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -431,7 +539,16 @@ const products = [
             os: "Android 13",
             weight: "188g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -465,7 +582,16 @@ const products = [
             os: "Android 13",
             weight: "188g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -499,7 +625,16 @@ const products = [
             os: "Android 13",
             weight: "188g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -536,7 +671,16 @@ const products = [
             os: "Android 13",
             weight: "186g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -570,7 +714,16 @@ const products = [
             os: "Android 13",
             weight: "186g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -603,7 +756,16 @@ const products = [
             os: "Android 13",
             weight: "186g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -637,7 +799,16 @@ const products = [
             os: "Android 13",
             weight: "186g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -670,7 +841,17 @@ const products = [
             os: "Android 13",
             weight: "186g"
         },
-        description: {
+        descriptions: {
+
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -707,7 +888,16 @@ const products = [
             os: "Android 13",
             weight: "205g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -741,7 +931,17 @@ const products = [
             os: "Android 13",
             weight: "205g"
         },
-        description: {
+        descriptions: {
+
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -775,7 +975,16 @@ const products = [
             os: "Android 13",
             weight: "205g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -809,7 +1018,17 @@ const products = [
             os: "Android 13",
             weight: "205g"
         },
-        description: {
+        descriptions: {
+            
+            display: "6.74 inch AMOLED 144Hz",
+            chipset: "Snapdragon 8 Gen 2",
+            ram: "12GB",
+            storage: ["256GB", "512GB"],
+            rearCamera: "50MP + 8MP + 2MP",
+            frontCamera: "16MP",
+            battery: "5240mAh",
+            os: "Android 13",
+            weight: "205g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
@@ -843,7 +1062,16 @@ const products = [
             os: "Android 13",
             weight: "205g"
         },
-        description: {
+        descriptions: {
+             display: "6.1 inch Super Retina XDR OLED",
+            chipset: "Apple A16 Bionic",
+            ram: "6GB",
+            storage: ["128GB", "256GB", "512GB"],
+            rearCamera: "48MP + 12MP",
+            frontCamera: "12MP",
+            battery: "3349mAh",
+            os: "iOS 17",
+            weight: "171g",
             bluetooth: "Bluetooth 6.0",
             usb: "USB Type-C 3.1 Gen2, OTG",
             wlan: "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",

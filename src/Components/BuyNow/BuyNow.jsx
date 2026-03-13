@@ -53,82 +53,82 @@ const BuyNow = () => {
 
                         <tr>
                             <th>Display Size</th>
-                            <td>{filterproduct.specs.display}</td>
+                            <td>{filterproduct.descriptions.display}</td>
                         </tr>
 
                         <tr>
                             <th>OS</th>
-                            <td>{filterproduct.specs.os}</td>
+                            <td>{filterproduct.descriptions.os}</td>
                         </tr>
 
                         <tr>
                             <th>Rear Camera</th>
-                            <td>{filterproduct.specs.rearCamera}</td>
+                            <td>{filterproduct.descriptions.rearCamera}</td>
                         </tr>
 
                         <tr>
                             <th>Front Camera</th>
-                            <td>{filterproduct.specs.frontCamera}</td>
+                            <td>{filterproduct.descriptions.frontCamera}</td>
                         </tr>
 
                         <tr>
                             <th>Battery</th>
-                            <td>{filterproduct.specs.battery}</td>
+                            <td>{filterproduct.descriptions.battery}</td>
                         </tr>
 
                         <tr>
                             <th>Bluetooth Technology</th>
-                            <td>{filterproduct.description?.bluetooth}</td>
+                            <td>{filterproduct.descriptions.bluetooth}</td>
                         </tr>
 
                         <tr>
                             <th>USB</th>
-                            <td>{filterproduct.description?.usb}</td>
+                            <td>{filterproduct.descriptions.usb}</td>
                         </tr>
 
                         <tr>
                             <th>WLAN</th>
-                            <td>{filterproduct.description?.wlan}</td>
+                            <td>{filterproduct.descriptions.wlan}</td>
                         </tr>
 
                         <tr>
                             <th>NFC</th>
-                            <td>{filterproduct.description?.nfc}</td>
+                            <td>{filterproduct.descriptions.nfc}</td>
                         </tr>
 
                         <tr>
                             <th>Sensor</th>
-                            <td>{filterproduct.description?.sensor}</td>
+                            <td>{filterproduct.descriptions.sensor}</td>
                         </tr>
 
                         <tr>
                             <th>Battery Capacity</th>
-                            <td>{filterproduct.description?.batteryCapacity}</td>
+                            <td>{filterproduct.descriptions.batteryCapacity}</td>
                         </tr>
 
                         <tr>
                             <th>Water Protection</th>
-                            <td>{filterproduct.description?.waterProtection}</td>
+                            <td>{filterproduct.descriptions.waterProtection}</td>
                         </tr>
 
                         <tr>
                             <th>Dimension</th>
-                            <td>{filterproduct.description?.dimension}</td>
+                            <td>{filterproduct.descriptions.dimension}</td>
                         </tr>
 
                         <tr>
                             <th>Colour</th>
-                            <td>{filterproduct.description?.colour}</td>
+                            <td>{filterproduct.descriptions.colour}</td>
                         </tr>
 
                         <tr>
                             <th>Weight</th>
-                            <td>{filterproduct.description?.weight}</td>
+                            <td>{filterproduct.descriptions.weight}</td>
                         </tr>
 
                         <tr>
                             <th>In The Box</th>
-                            <td>{filterproduct.description?.inTheBox}</td>
+                            <td>{filterproduct.descriptions.inTheBox}</td>
                         </tr>
                     </tbody>
                 </table>
