@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { updatequan } from '../slice/cartSlice'
+import { calTotal, removecart, updatequan } from '../slice/cartSlice'
 
 const CartPage = () => {
 
-  const { cartItems } = useSelector(state => state.cart)
+  const { cartItems, totalAmount } = useSelector(state => state.cart)
   const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    dispatch(calTotal())
+  },[cartItems]);
 
   return (
      <div className='container m-5'>
             <div className='row'>
                 <div className='col'>
                     {cartItems.length === 0 ? (<p>Your Cart is Empty</p>) : (
+                        <div className='table-responsive'>
                         <table className='table table-bordered text-center align-middle'>
                             <thead className="table-dark">
                                 <tr>
@@ -72,16 +78,22 @@ const CartPage = () => {
                                         <td>
                                             <button
                                                 className="btn btn-sm btn-danger"
+                                                onClick={() => dispatch(removecart(product))}
                                             >
                                                 Remove
                                             </button>
                                         </td>
                                     </tr>
                                 ))}
+
+                                <tr >
+                                    <td colSpan={5} className='text-end'>Grand Total : </td>
+                                    <td colSpan={7}>{totalAmount}</td>
+                                </tr>
                                 
                             </tbody>
                         </table>
-
+                    </div>
 
                     )
                     }

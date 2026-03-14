@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState =  {
-    cartItems : JSON.parse(localStorage.getItem("mobilehub")) || []
+    cartItems : JSON.parse(localStorage.getItem("mobilehub")) || [],
+    totalAmount : 0
 }
 const cartSlice =  createSlice({
     name : 'cart',
@@ -38,12 +39,21 @@ const cartSlice =  createSlice({
 
         },
         removecart(state,action){
-            
+            const removeid = action.payload;
+            state.cartItems = state.cartItems.filter(i => i.id !== removeid.id)
+
+            localStorage.setItem('mobilehub', JSON.stringify(state.cartItems));
+        },
+        calTotal(state){
+            state.totalAmount = state.cartItems.reduce(
+                (sum,product) => sum + product.price * product.quantity , 0
+            );
         }
+
         
     }
 })
 
-export const { addtoCart,updatequan } = cartSlice.actions;
+export const { addtoCart,updatequan,removecart,calTotal } = cartSlice.actions;
 export default cartSlice.reducer;
 

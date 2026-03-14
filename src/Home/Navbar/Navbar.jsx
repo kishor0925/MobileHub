@@ -2,8 +2,23 @@ import React from 'react'
 import logo from './Images/logo.png'
 import './Navbar.css'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+
+    if(search.trim() !== ""){
+      navigate(`/brand/${search.toLowerCase()}`);
+    }
+    search("")
+  };
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark navs fixed-top">
       <div className="container p-2">
@@ -38,9 +53,10 @@ const Navbar = () => {
             
 
           </ul>
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search by brand" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
+          <form className="d-flex" role="search" onSubmit={handleSearch}>
+            <input onChange={(e) => setSearch(e.target.value)} className="form-control me-2" type="search" value={search} placeholder="Search by brand" aria-label="Search" />
+            <button className="btn btn-outline-success" type="submit"
+            >Search</button>
           </form>
 
         </div>
