@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import products from '../Brands/BrandInfo'
+import { useDispatch } from 'react-redux'
+import { addtoCart } from '../../slice/cartSlice'
 import './BuyNow.css'
 
 const BuyNow = () => {
 
-    const { id } = useParams()
+    const dispatch = useDispatch();
+    const { id } = useParams();
     const [qty, setQty] = useState(1)
 
     const filterproduct = products.find(pro => pro.id === Number(id))
 
-  
 
     if (!filterproduct) {
         return <h2 className='text-center mt-5'>Product Not Found</h2>
@@ -18,6 +20,7 @@ const BuyNow = () => {
 
     function addtocart(){
         alert('Cart added successfully');
+        dispatch(addtoCart(filterproduct))
     }
 
     return (
