@@ -18,9 +18,9 @@ const BuyNow = () => {
         return <h2 className='text-center mt-5'>Product Not Found</h2>
     }
 
-    function addtocart(){
+    function addtocart(fltrproduct){
         alert('Cart added successfully');
-        dispatch(addtoCart(filterproduct))
+        dispatch(addtoCart(fltrproduct))
     }
 
     return (
@@ -79,7 +79,7 @@ const BuyNow = () => {
 
                         <button
                             className='btn cart-btn'
-                            onClick={addtocart}
+                            onClick={() => addtocart(filterproduct)}
                         >
                             Add to Cart
                         </button>

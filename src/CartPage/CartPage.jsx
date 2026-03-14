@@ -28,7 +28,7 @@ const CartPage = () => {
                                     <tr key={index}>
                                         <td>
                                             <img
-                                                src={product.img}
+                                                src={product.image}
                                                 alt={product.title}
                                                 style={{
                                                     width: "80px",
@@ -39,7 +39,7 @@ const CartPage = () => {
                                             />
                                         </td>
 
-                                        <td>{product.title}</td>
+                                        <td>{product.name}</td>
 
                                         <td>₹{product.price}</td>
 

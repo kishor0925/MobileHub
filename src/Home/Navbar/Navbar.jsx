@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './Images/logo.png'
 import './Navbar.css'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -31,13 +31,11 @@ const Navbar = () => {
               Brands
             </NavLink>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#">Support</a>
-            </li>
+            <NavLink to = "/cart" className="nav-link">
+             Cart
+            </NavLink>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#">Cart</a>
-            </li>
+            
 
           </ul>
           <form className="d-flex" role="search">
