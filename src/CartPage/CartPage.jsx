@@ -3,16 +3,17 @@ import { useSelector } from 'react-redux'
 
 const CartPage = () => {
 
-  const {products} = useSelector(state => state.cartItems)
+  const { cartItems } = useSelector(state => state.cart)
+
   return (
-    <div>
-        {products.map( (pro) => (
-            <div>
-                <h1>{pro.id}</h1>
-                <img src = {pro.img} />
-            </div>
-        ))
-        } 
+    <div className='container'>
+      {cartItems.map((pro) => (
+        <div key={pro.id}>
+          <h1>{pro.id}</h1>
+          <img src={pro.img} alt="" />
+          <p>Qty: {pro.quantity}</p>
+        </div>
+      ))}
     </div>
   )
 }
