@@ -1,12 +1,14 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { updatequan } from '../slice/cartSlice'
 
 const CartPage = () => {
 
   const { cartItems } = useSelector(state => state.cart)
+  const dispatch = useDispatch();
 
   return (
-     <div className='container'>
+     <div className='container m-5'>
             <div className='row'>
                 <div className='col'>
                     {cartItems.length === 0 ? (<p>Your Cart is Empty</p>) : (
@@ -47,7 +49,7 @@ const CartPage = () => {
 
                                         <td>
                                             <button
-                                               
+                                                onClick={() => dispatch( updatequan({pid : product.id , change : -1}) )}
                                                 className="btn btn-sm btn-secondary"
                                             >
                                                 -
@@ -58,7 +60,7 @@ const CartPage = () => {
                                             </span>
 
                                             <button
-                                                
+                                                onClick={() => dispatch( updatequan({pid : product.id , change : 1}) )}
                                                 className="btn btn-sm btn-secondary"
                                             >
                                                 +
@@ -69,7 +71,6 @@ const CartPage = () => {
 
                                         <td>
                                             <button
-                                               
                                                 className="btn btn-sm btn-danger"
                                             >
                                                 Remove

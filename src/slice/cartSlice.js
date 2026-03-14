@@ -20,11 +20,30 @@ const cartSlice =  createSlice({
                 state.cartItems.push({...pid, quantity : 1});
             }
             localStorage.setItem('mobilehub' , JSON.stringify(state.cartItems));
+        },
+        updatequan(state,action){
+            const {pid, change} = action.payload;
+            const existingItem = state.cartItems.find( i => i.id === pid);
+
+            if(existingItem)
+            {
+                existingItem.quantity += change;
+
+                if(existingItem.quantity <= 1)
+                {
+                    existingItem.quantity = 1;
+                }
+            }
+            localStorage.setItem('mobilehub', JSON.stringify(state.cartItems));
+
+        },
+        removecart(state,action){
+            
         }
         
     }
 })
 
-export const { addtoCart } = cartSlice.actions;
+export const { addtoCart,updatequan } = cartSlice.actions;
 export default cartSlice.reducer;
 
