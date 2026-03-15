@@ -11,7 +11,6 @@ const BuyNow = () => {
 
     const filterproduct = products.find(pro => pro.id === Number(id))
 
-    const [cartItems] =  useSelector((state) => state.cart);
     if (!filterproduct) {
         return <h2 className='text-center mt-5'>Product Not Found</h2>
     }
@@ -20,6 +19,8 @@ const BuyNow = () => {
         alert('Cart added successfully');
         dispatch(addtoCart(fltrproduct))
     }
+
+  
 
     return (
 
@@ -54,17 +55,17 @@ const BuyNow = () => {
                     <div className="qty-box">
 
                         <button
-                            onClick={() => dispatch(updatequan({pid : filterproduct.id , change : -1}))}
-                            className='qty-btn'
+                           
+                            className='qty-btn' disabled
                         >
                             -
                         </button>
 
-                        <span className='qty-number'>{cartItems.quantity}</span>
+                        <span className='qty-number'>1</span>
 
                         <button
-                            onClick={() => dispatch(updatequan({pid : filterproduct.id , change : 1}))}
-                            className='qty-btn'
+                            
+                            className='qty-btn inactive' disabled
                         >
                             +
                         </button>
