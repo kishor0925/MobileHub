@@ -17,7 +17,7 @@ const Navbar = () => {
     if(search.trim() !== ""){
       navigate(`/brand/${search.toLowerCase()}`);
     }
-    search("")
+    
   };
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark navs fixed-top">

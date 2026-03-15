@@ -1,19 +1,17 @@
-import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import products from '../Brands/BrandInfo'
-import { useDispatch } from 'react-redux'
-import { addtoCart } from '../../slice/cartSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { addtoCart, updatequan } from '../../slice/cartSlice'
 import './BuyNow.css'
 
 const BuyNow = () => {
 
     const dispatch = useDispatch();
     const { id } = useParams();
-    const [qty, setQty] = useState(1)
 
     const filterproduct = products.find(pro => pro.id === Number(id))
 
-
+    const [cartItems] =  useSelector((state) => state.cart);
     if (!filterproduct) {
         return <h2 className='text-center mt-5'>Product Not Found</h2>
     }
@@ -56,16 +54,16 @@ const BuyNow = () => {
                     <div className="qty-box">
 
                         <button
-                            onClick={() => setQty(qty > 1 ? qty - 1 : 1)}
+                            onClick={() => dispatch(updatequan({pid : filterproduct.id , change : -1}))}
                             className='qty-btn'
                         >
                             -
                         </button>
 
-                        <span className='qty-number'>{qty}</span>
+                        <span className='qty-number'>{cartItems.quantity}</span>
 
                         <button
-                            onClick={() => setQty(qty + 1)}
+                            onClick={() => dispatch(updatequan({pid : filterproduct.id , change : 1}))}
                             className='qty-btn'
                         >
                             +
@@ -94,7 +92,7 @@ const BuyNow = () => {
 
             <div className='product-description mt-5'>
 
-                <h3 className='mb-4'>Product Description</h3>
+                <h3 className='mb-4 text-center'>Product Description</h3>
 
                 <table className="table table-bordered specs-table">
 
