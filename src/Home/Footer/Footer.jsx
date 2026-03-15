@@ -47,12 +47,10 @@ const Footer = () => {
             <h5 className="footer-title fw-bold">Quick Links</h5>
 
             <ul className="footer-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Brands</a></li>
-              <li><a href="#">Offers</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Support</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/brand">Brand</a></li>
+              <li><a href="/cart">Cart</a></li>
+        
             </ul>
 
           </div>
